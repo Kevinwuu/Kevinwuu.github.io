@@ -105,5 +105,5 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/Kevinwuu/Kevinwuu.github.io.git
-  branch: main
+  branch: gh-pages
   message: 'deploy site'
