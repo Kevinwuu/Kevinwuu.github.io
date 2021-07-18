@@ -1,21 +1,20 @@
 # Hexo blog
 Personal tech blog build by hexo & Github pages
 
-[link](https://kevinwuu.github.io)
+[https://kevinwuu.dev](https://kevinwuu.dev)
 
 ---
 
 ## Todos
 
-- [ ] custom domain
+- [x] custom domain
 - [ ] site map for Google Search Console
 - [ ] publish first post
-- [ ] avator
-- [ ] auto 
+- [x] avator
 - [ ] add comment plugin
 - [ ] like coin support
 - [ ] hexo admin
 - [ ] reading progress
 - [ ] work with typora
-- [ ] social account links (Github, Email, twitter)
+- [x] social account links (Github, Email)
 - [ ] visitors
