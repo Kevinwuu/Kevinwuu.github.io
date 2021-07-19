@@ -14,7 +14,7 @@ Personal tech blog build by hexo & Github pages
 - [ ] add comment plugin
 - [ ] like coin support
 - [ ] hexo admin
-- [ ] reading progress
+- [x] reading progress
 - [ ] work with typora
 - [x] social account links (Github, Email)
 - [ ] visitors
