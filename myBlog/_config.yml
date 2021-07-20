@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 我的部落格
-subtitle: '練習整理學習筆記'
-description: '描述...'
+title: 不為誰而寫的code
+subtitle: '老少咸宜的技術教學'
+#description: 
 keywords:
 author: Ethan Wu
 language: zh-TW
@@ -13,7 +13,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://Kevinwuu.github.io/
+# url: https://Kevinwuu.github.io/
+url: https://kevinwuu.dev
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

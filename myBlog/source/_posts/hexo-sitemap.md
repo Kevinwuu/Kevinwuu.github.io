@@ -5,6 +5,7 @@ categories: 前端
 tags: hexo
 ---
 
+![sitemap](sitemap.png)
 ## 步驟
 
 1. 安裝自動產生sitemap的套件[hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap)
@@ -61,7 +62,8 @@ sitemap:
 	```
 
 - deploy完，sitemap.xml 找不到頁面
-這篇文章有非常完整的解釋和教學，照做即可
+這篇文章有非常完整的解決方案，我自己是沒有遇到
+如果有遇到的朋友可以參考看看
 [解決 Hexo + Github Pages 新增 sitemap.xml 找不到頁面](https://blog.kyomind.tw/adding-sitemap-issue/)
 
 - 提交成功，但是顯示狀態錯誤
@@ -69,7 +71,14 @@ sitemap:
 ![sitemap-err](sitemap-err.png)
 
 ![sitemap-err-1](sitemap-err-1.png)
-待釐清...
+
+在提交後有，若出現這個錯誤：「可讀取 Sitemap，但其中含有錯誤」，表示 sitemap 裡面的網址跟當初在 Google Search Console 註冊的網址有所差異。
+
+
+由於自己後來有購買網域，所以現在網址已經不是當初Github page所提供的網址
+必須回到_config.yml 更新 URL，才能跟sitemap填寫的網址匹配。
+
+[參考連結](https://ycjhuo.gitlab.io/blogs/The-first-step-of-SEO-how-to-tell-Google-the-way-to-find-your-website.html#%E6%8F%90%E4%BA%A4-sitemap-%E5%BE%8C-%E5%8F%AF%E8%83%BD%E7%94%A2%E7%94%9F%E7%9A%84%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF)
 
 ----
 Refference
