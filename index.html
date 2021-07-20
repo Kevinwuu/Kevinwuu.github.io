@@ -20,12 +20,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"kevinwuu.dev","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="描述...">
 <meta property="og:type" content="website">
-<meta property="og:title" content="我的部落格">
+<meta property="og:title" content="不為誰而寫的code">
 <meta property="og:url" content="https://kevinwuu.dev/index.html">
-<meta property="og:site_name" content="我的部落格">
-<meta property="og:description" content="描述...">
+<meta property="og:site_name" content="不為誰而寫的code">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:author" content="Ethan Wu">
 <meta name="twitter:card" content="summary">
@@ -38,7 +36,7 @@
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-TW","comments":"","permalink":"","path":"index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>我的部落格</title>
+<title>不為誰而寫的code</title>
   
 
 
@@ -47,7 +45,7 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-<link rel="alternate" href="/atom.xml" title="我的部落格" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="不為誰而寫的code" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -68,10 +66,10 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">我的部落格</h1>
+      <h1 class="site-title">不為誰而寫的code</h1>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">練習整理學習筆記</p>
+      <p class="site-subtitle" itemprop="description">老少咸宜的技術教學</p>
   </div>
 
   <div class="site-nav-right">
@@ -127,7 +125,7 @@
     <img class="site-author-image" itemprop="image" alt="Ethan Wu"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">Ethan Wu</p>
-  <div class="site-description" itemprop="description">描述...</div>
+  <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
@@ -202,11 +200,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="描述...">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我的部落格">
+      <meta itemprop="name" content="不為誰而寫的code">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -220,10 +218,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
-      
 
-      <time title="創建時間：2021-07-20 22:55:46 / 修改時間：23:59:46" itemprop="dateCreated datePublished" datetime="2021-07-20T22:55:46+08:00">2021-07-20</time>
+      <time title="創建時間：2021-07-20 22:55:46" itemprop="dateCreated datePublished" datetime="2021-07-20T22:55:46+08:00">2021-07-20</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2021-07-21 00:28:04" itemprop="dateModified" datetime="2021-07-21T00:28:04+08:00">2021-07-21</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -244,7 +248,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
+          <p><img src="/2021/07/20/hexo-sitemap/sitemap.png" alt="sitemap"></p>
+<h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
 <li>安裝自動產生sitemap的套件<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
@@ -290,11 +295,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="描述...">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我的部落格">
+      <meta itemprop="name" content="不為誰而寫的code">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -378,11 +383,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="描述...">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我的部落格">
+      <meta itemprop="name" content="不為誰而寫的code">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
