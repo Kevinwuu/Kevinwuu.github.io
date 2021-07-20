@@ -22,7 +22,7 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"kevinwuu.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 <meta name="description" content="步驟 安裝自動產生sitemap的套件hexo-generator-sitemap  1npm install hexo-generator-sitemap --save   設定根目錄下的_config.yml，自己是習慣把新的設定加在設定檔最後面(注意縮排!)  12345# Sitemap# https:&#x2F;&#x2F;github.com&#x2F;hexojs&#x2F;hexo-generator-sitemapsi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo架站-設定Sitemap">
+<meta property="og:title" content="[Hexo架站懶人包] - Sitemap設定">
 <meta property="og:url" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/index.html">
 <meta property="og:site_name" content="我的部落格">
 <meta property="og:description" content="步驟 安裝自動產生sitemap的套件hexo-generator-sitemap  1npm install hexo-generator-sitemap --save   設定根目錄下的_config.yml，自己是習慣把新的設定加在設定檔最後面(注意縮排!)  12345# Sitemap# https:&#x2F;&#x2F;github.com&#x2F;hexojs&#x2F;hexo-generator-sitemapsi">
@@ -32,8 +32,9 @@
 <meta property="og:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-3.png">
 <meta property="og:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-4.png">
 <meta property="og:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-err.png">
+<meta property="og:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-err-1.png">
 <meta property="article:published_time" content="2021-07-20T14:55:46.000Z">
-<meta property="article:modified_time" content="2021-07-20T15:27:02.851Z">
+<meta property="article:modified_time" content="2021-07-20T15:41:15.945Z">
 <meta property="article:author" content="Ethan Wu">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -44,10 +45,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://kevinwuu.github.io/2021/07/20/hexo-sitemap/","path":"2021/07/20/hexo-sitemap/","title":"Hexo架站-設定Sitemap"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://kevinwuu.github.io/2021/07/20/hexo-sitemap/","path":"2021/07/20/hexo-sitemap/","title":"[Hexo架站懶人包] - Sitemap設定"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hexo架站-設定Sitemap | 我的部落格</title>
+<title>[Hexo架站懶人包] - Sitemap設定 | 我的部落格</title>
   
 
 
@@ -221,7 +222,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo架站-設定Sitemap
+          [Hexo架站懶人包] - Sitemap設定
         </h1>
 
         <div class="post-meta-container">
@@ -233,7 +234,7 @@
       <span class="post-meta-item-text">發表於</span>
       
 
-      <time title="創建時間：2021-07-20 22:55:46 / 修改時間：23:27:02" itemprop="dateCreated datePublished" datetime="2021-07-20T22:55:46+08:00">2021-07-20</time>
+      <time title="創建時間：2021-07-20 22:55:46 / 修改時間：23:41:15" itemprop="dateCreated datePublished" datetime="2021-07-20T22:55:46+08:00">2021-07-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -270,19 +271,24 @@
 </ol>
 <h2 id="Google-Search-Console設定"><a href="#Google-Search-Console設定" class="headerlink" title="Google Search Console設定"></a>Google Search Console設定</h2><p>在一開始進入 Google Search Console 之前必須先設定驗證自己的網站</p>
 <p><img src="/2021/07/20/hexo-sitemap/sitemap-1.png" alt="sitemap-1"></p>
-<h3 id="驗證"><a href="#驗證" class="headerlink" title="驗證"></a>驗證</h3><p>根據ithome的<a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10249885">文章</a>範例是建議使用右邊網址前置字元。<br>不過在查教學文章前我就先使用網域的驗證方式成功了! :good<br>個人是覺得比教學簡單很多，只要輸入完網域後就會自動驗證成功了</p>
+<h3 id="驗證"><a href="#驗證" class="headerlink" title="驗證"></a>驗證</h3><p>根據ithome的<a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10249885">文章</a>範例是建議使用網址前置字元做驗證。<br>不過在查教學文章前我就先使用網域的驗證方式成功了! :good<br>個人是覺得比教學簡單很多，只要輸入完網域後就會自動驗證成功。<br>特別標註為新功能，可能就是代表會比舊方法好用吧?</p>
 <p><img src="/2021/07/20/hexo-sitemap/sitemap-2.png" alt="sitemap-2"></p>
 <h3 id="填寫sitemap位置"><a href="#填寫sitemap位置" class="headerlink" title="填寫sitemap位置"></a>填寫sitemap位置</h3><p>首先先點選側邊欄中的Sitemap<br><img src="/2021/07/20/hexo-sitemap/sitemap-3.png"></p>
 <p><img src="/2021/07/20/hexo-sitemap/sitemap-4.png"></p>
 <p>如果成功提交後就會將結果顯示在已提交的Sitemap中</p>
 <h2 id="Trouble-Shooting"><a href="#Trouble-Shooting" class="headerlink" title="Trouble Shooting"></a>Trouble Shooting</h2><ul>
-<li>如果填寫sitemap位置失敗，記得檢查是否有填入完整網址  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kevinwuu.dev/sitemap.xml</span><br></pre></td></tr></table></figure></li>
-<li>提交成功，但是顯示狀態錯誤</li>
+<li><p>如果填寫sitemap位置失敗，記得檢查是否有填入完整網址</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://&lt;yoursite_domain&gt;/sitemap.xml</span><br></pre></td></tr></table></figure></li>
+<li><p>deploy完，sitemap.xml 找不到頁面<br>這篇文章有非常完整的解釋和教學，照做即可<br><a target="_blank" rel="noopener" href="https://blog.kyomind.tw/adding-sitemap-issue/">解決 Hexo + Github Pages 新增 sitemap.xml 找不到頁面</a></p>
+</li>
+<li><p>提交成功，但是顯示狀態錯誤</p>
+</li>
 </ul>
-<p><img src="/2021/07/20/hexo-sitemap/sitemap-err.png" alt="sitemap-err"><br>待釐清…</p>
+<p><img src="/2021/07/20/hexo-sitemap/sitemap-err.png" alt="sitemap-err"></p>
+<p><img src="/2021/07/20/hexo-sitemap/sitemap-err-1.png" alt="sitemap-err-1"><br>待釐清…</p>
 <hr>
 <p>Refference</p>
-<p><a target="_blank" rel="noopener" href="https://askie.today/upload-sitemap-google-search-console-seo-hexo-blog/">輕鬆地提交 Hexo 部落格的 Sitemap.xml 到 Google Search Console</a><br><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10249885">(24) 試著學 Hexo - SEO 篇 - Google Search Console</a></p>
+<p><a target="_blank" rel="noopener" href="https://askie.today/upload-sitemap-google-search-console-seo-hexo-blog/">輕鬆地提交 Hexo 部落格的 Sitemap.xml 到 Google Search Console</a><br><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10249885">(24) 試著學 Hexo - SEO 篇 - Google Search Console</a><br><a target="_blank" rel="noopener" href="https://jenifers001d.github.io/2019/12/09/SEO/SEO1-Website-is-Not-Showing-in-Google-Search/">SEO 優化 (一)：為什麼搜尋 (Google) 不到我的 Hexo 部落格？</a></p>
 
     </div>
 
