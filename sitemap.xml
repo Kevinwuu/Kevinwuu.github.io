@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kevinwuu.github.io/2021/07/20/hexo-sitemap/</loc>
+    
+    <lastmod>2021-07-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kevinwuu.github.io/2021/07/18/hexo-build-1/</loc>
     
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-20</lastmod>
     
   </url>
   

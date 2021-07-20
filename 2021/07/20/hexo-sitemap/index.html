@@ -20,25 +20,34 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"kevinwuu.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="描述...">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的部落格">
-<meta property="og:url" content="https://kevinwuu.github.io/index.html">
+<meta name="description" content="步驟 安裝自動產生sitemap的套件hexo-generator-sitemap  1npm install hexo-generator-sitemap --save   設定根目錄下的_config.yml，自己是習慣把新的設定加在設定檔最後面(注意縮排!)  12345# Sitemap# https:&#x2F;&#x2F;github.com&#x2F;hexojs&#x2F;hexo-generator-sitemapsi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo架站-設定Sitemap">
+<meta property="og:url" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/index.html">
 <meta property="og:site_name" content="我的部落格">
-<meta property="og:description" content="描述...">
+<meta property="og:description" content="步驟 安裝自動產生sitemap的套件hexo-generator-sitemap  1npm install hexo-generator-sitemap --save   設定根目錄下的_config.yml，自己是習慣把新的設定加在設定檔最後面(注意縮排!)  12345# Sitemap# https:&#x2F;&#x2F;github.com&#x2F;hexojs&#x2F;hexo-generator-sitemapsi">
 <meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-1.png">
+<meta property="og:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-2.png">
+<meta property="og:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-3.png">
+<meta property="og:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-4.png">
+<meta property="og:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-err.png">
+<meta property="article:published_time" content="2021-07-20T14:55:46.000Z">
+<meta property="article:modified_time" content="2021-07-20T15:27:02.851Z">
 <meta property="article:author" content="Ethan Wu">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/sitemap-1.png">
 
 
-<link rel="canonical" href="https://kevinwuu.github.io/">
+<link rel="canonical" href="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-TW","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://kevinwuu.github.io/2021/07/20/hexo-sitemap/","path":"2021/07/20/hexo-sitemap/","title":"Hexo架站-設定Sitemap"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>我的部落格</title>
+<title>Hexo架站-設定Sitemap | 我的部落格</title>
   
 
 
@@ -105,7 +114,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目錄
@@ -118,6 +127,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%A9%9F"><span class="nav-number">1.</span> <span class="nav-text">步驟</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Google-Search-Console%E8%A8%AD%E5%AE%9A"><span class="nav-number">2.</span> <span class="nav-text">Google Search Console設定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%97%E8%AD%89"><span class="nav-number">2.1.</span> <span class="nav-text">驗證</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A1%AB%E5%AF%ABsitemap%E4%BD%8D%E7%BD%AE"><span class="nav-number">2.2.</span> <span class="nav-text">填寫sitemap位置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Trouble-Shooting"><span class="nav-number">3.</span> <span class="nav-text">Trouble Shooting</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -187,16 +197,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -209,9 +220,9 @@
       <meta itemprop="name" content="我的部落格">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/20/hexo-sitemap/" class="post-title-link" itemprop="url">Hexo架站-設定Sitemap</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Hexo架站-設定Sitemap
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -244,7 +255,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
+        <h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
 <li>安裝自動產生sitemap的套件<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
@@ -273,7 +284,6 @@
 <p>Refference</p>
 <p><a target="_blank" rel="noopener" href="https://askie.today/upload-sitemap-google-search-console-seo-hexo-blog/">輕鬆地提交 Hexo 部落格的 Sitemap.xml 到 Google Search Console</a><br><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10249885">(24) 試著學 Hexo - SEO 篇 - Google Search Console</a></p>
 
-      
     </div>
 
     
@@ -281,178 +291,25 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+          </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kevinwuu.github.io/2021/07/18/hexo-build-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="描述...">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我的部落格">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/18/hexo-build-1/" class="post-title-link" itemprop="url">Hexo 8 個人部落格架設</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2021-07-18 11:19:10" itemprop="dateCreated datePublished" datetime="2021-07-18T11:19:10+08:00">2021-07-18</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：2021-07-20 22:51:33" itemprop="dateModified" datetime="2021-07-20T22:51:33+08:00">2021-07-20</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="/2021/07/18/hexo-build-1/hexo_github.png"></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>身為一個工程師，平時總是需要不斷的更新自己的現有知識避免再度踩到類似的坑<br>寫筆記應該算是人人都會做的事，然而每次當要講解給別人聽時才發現其實我們常常太過簡化一個知識的架構，導致最後其實只是寫給自己當備忘錄而已<br>而這時候練習寫部落格就是一件很有幫助的事了</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/07/18/hexo-build-1/#more" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kevinwuu.github.io/2021/07/13/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="描述...">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我的部落格">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/13/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2021-07-13 22:41:41" itemprop="dateCreated datePublished" datetime="2021-07-13T22:41:41+08:00">2021-07-13</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：2021-07-17 18:30:32" itemprop="dateModified" datetime="2021-07-17T18:30:32+08:00">2021-07-17</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<p>wegqwgqwhge<br>ewg</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/07/13/hello-world/#more" rel="contents">
-                閱讀全文 &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/07/18/hexo-build-1/" rel="prev" title="Hexo 8 個人部落格架設">
+                  <i class="fa fa-chevron-left"></i> Hexo 8 個人部落格架設
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 

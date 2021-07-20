@@ -6,7 +6,7 @@
   <link href="https://kevinwuu.github.io/atom.xml" rel="self"/>
   
   <link href="https://kevinwuu.github.io/"/>
-  <updated>2021-07-19T15:10:59.637Z</updated>
+  <updated>2021-07-20T15:27:02.851Z</updated>
   <id>https://kevinwuu.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo架站-設定Sitemap</title>
+    <link href="https://kevinwuu.github.io/2021/07/20/hexo-sitemap/"/>
+    <id>https://kevinwuu.github.io/2021/07/20/hexo-sitemap/</id>
+    <published>2021-07-20T14:55:46.000Z</published>
+    <updated>2021-07-20T15:27:02.851Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;步驟&quot;&gt;&lt;a href=&quot;#步驟&quot; class=&quot;headerlink&quot; title=&quot;步驟&quot;&gt;&lt;/a&gt;步驟&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;安裝自動產生sitemap的套件&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://kevinwuu.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="hexo" scheme="https://kevinwuu.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo 8 個人部落格架設</title>
     <link href="https://kevinwuu.github.io/2021/07/18/hexo-build-1/"/>
     <id>https://kevinwuu.github.io/2021/07/18/hexo-build-1/</id>
     <published>2021-07-18T03:19:10.000Z</published>
-    <updated>2021-07-19T15:10:59.637Z</updated>
+    <updated>2021-07-20T14:51:33.873Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/07/18/hexo-build-1/hexo_github.png&quot;&gt;&lt;/p&gt;
