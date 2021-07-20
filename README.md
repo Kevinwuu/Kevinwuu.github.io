@@ -9,7 +9,7 @@ Personal tech blog build by hexo & Github pages
 
 - [x] custom domain
 - [x] site map for Google Search Console
-- [ ] publish first post
+- [x] publish first post
 - [x] avator
 - [ ] add comment plugin
 - [ ] like coin support
