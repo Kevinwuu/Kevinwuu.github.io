@@ -8,7 +8,7 @@ Personal tech blog build by hexo & Github pages
 ## Todos
 
 - [x] custom domain
-- [ ] site map for Google Search Console
+- [x] site map for Google Search Console
 - [ ] publish first post
 - [x] avator
 - [ ] add comment plugin
@@ -18,3 +18,5 @@ Personal tech blog build by hexo & Github pages
 - [ ] work with typora
 - [x] social account links (Github, Email)
 - [ ] visitors
+- [x] rss
+- [ ] favicon
