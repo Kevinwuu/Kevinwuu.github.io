@@ -15,6 +15,8 @@ npm install hexo-generator-sitemap --save
 
 2. 設定根目錄下的_config.yml，自己是習慣把新的設定加在設定檔最後面(注意縮排!)
 
+<!--more-->
+
 ```yaml
 # Sitemap
 # https://github.com/hexojs/hexo-generator-sitemap
