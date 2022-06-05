@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kevinwuu.dev/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/</loc>
+    
+    <lastmod>2022-06-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/</loc>
+    
+    <lastmod>2022-06-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kevinwuu.dev/2022/06/04/hexo%E5%85%A5%E9%96%80/</loc>
     
     <lastmod>2022-06-05</lastmod>
@@ -16,14 +30,14 @@
   </url>
   
   <url>
-    <loc>https://kevinwuu.dev/categories/index.html</loc>
+    <loc>https://kevinwuu.dev/about/index.html</loc>
     
     <lastmod>2022-04-30</lastmod>
     
   </url>
   
   <url>
-    <loc>https://kevinwuu.dev/about/index.html</loc>
+    <loc>https://kevinwuu.dev/categories/index.html</loc>
     
     <lastmod>2022-04-30</lastmod>
     
@@ -43,13 +57,6 @@
     
   </url>
   
-  <url>
-    <loc>https://kevinwuu.dev/2021/07/13/hello-world/</loc>
-    
-    <lastmod>2022-04-30</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://kevinwuu.dev/</loc>
@@ -61,6 +68,13 @@
   
   <url>
     <loc>https://kevinwuu.dev/tags/hexo/</loc>
+    <lastmod>2022-06-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevinwuu.dev/tags/mapbox/</loc>
     <lastmod>2022-06-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

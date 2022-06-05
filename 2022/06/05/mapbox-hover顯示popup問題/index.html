@@ -20,36 +20,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"kevinwuu.dev","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="步驟 安裝自動產生sitemap的套件hexo-generator-sitemap  1npm install hexo-generator-sitemap --save   設定根目錄下的_config.yml，自己是習慣把新的設定加在設定檔最後面(注意縮排!)">
+<meta name="description" content="原因通常 mapbox 相關範例都是 click 某個點來顯示 popup，不過實際上也很常會需要在 hover 時顯示，同時 popup 上可能會有一些資訊可以點選 但是如果你設定 mousein 開啟,mouseleave 關閉 popup，那麼在你移動到 popup 前就會因為離開 popup 而觸發關閉">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[Hexo架站懶人包] - Sitemap設定">
-<meta property="og:url" content="https://kevinwuu.dev/2021/07/20/hexo-sitemap/index.html">
+<meta property="og:title" content="mapbox hover顯示popup問題">
+<meta property="og:url" content="https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/index.html">
 <meta property="og:site_name" content="不為誰而寫的code">
-<meta property="og:description" content="步驟 安裝自動產生sitemap的套件hexo-generator-sitemap  1npm install hexo-generator-sitemap --save   設定根目錄下的_config.yml，自己是習慣把新的設定加在設定檔最後面(注意縮排!)">
+<meta property="og:description" content="原因通常 mapbox 相關範例都是 click 某個點來顯示 popup，不過實際上也很常會需要在 hover 時顯示，同時 popup 上可能會有一些資訊可以點選 但是如果你設定 mousein 開啟,mouseleave 關閉 popup，那麼在你移動到 popup 前就會因為離開 popup 而觸發關閉">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://kevinwuu.dev/2021/07/20/hexo-sitemap/sitemap.png">
-<meta property="og:image" content="https://kevinwuu.dev/2021/07/20/hexo-sitemap/sitemap-1.png">
-<meta property="og:image" content="https://kevinwuu.dev/2021/07/20/hexo-sitemap/sitemap-2.png">
-<meta property="og:image" content="https://kevinwuu.dev/2021/07/20/hexo-sitemap/sitemap-3.png">
-<meta property="og:image" content="https://kevinwuu.dev/2021/07/20/hexo-sitemap/sitemap-4.png">
-<meta property="og:image" content="https://kevinwuu.dev/2021/07/20/hexo-sitemap/sitemap-err.png">
-<meta property="og:image" content="https://kevinwuu.dev/2021/07/20/hexo-sitemap/sitemap-err-1.png">
-<meta property="article:published_time" content="2021-07-20T14:55:46.000Z">
-<meta property="article:modified_time" content="2022-04-30T16:43:56.711Z">
+<meta property="og:image" content="https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/mapboxgl.png">
+<meta property="article:published_time" content="2022-06-05T09:18:14.000Z">
+<meta property="article:modified_time" content="2022-06-05T09:50:33.881Z">
 <meta property="article:author" content="Ethan Wu">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="mapbox">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://kevinwuu.dev/2021/07/20/hexo-sitemap/sitemap.png">
+<meta name="twitter:image" content="https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/mapboxgl.png">
 
 
-<link rel="canonical" href="https://kevinwuu.dev/2021/07/20/hexo-sitemap/">
+<link rel="canonical" href="https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://kevinwuu.dev/2021/07/20/hexo-sitemap/","path":"2021/07/20/hexo-sitemap/","title":"[Hexo架站懶人包] - Sitemap設定"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/","path":"2022/06/05/mapbox-hover顯示popup問題/","title":"mapbox hover顯示popup問題"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>[Hexo架站懶人包] - Sitemap設定 | 不為誰而寫的code</title>
+<title>mapbox hover顯示popup問題 | 不為誰而寫的code</title>
   
 
 
@@ -129,7 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%A9%9F"><span class="nav-number">1.</span> <span class="nav-text">步驟</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Google-Search-Console%E8%A8%AD%E5%AE%9A"><span class="nav-number">2.</span> <span class="nav-text">Google Search Console設定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%97%E8%AD%89"><span class="nav-number">2.1.</span> <span class="nav-text">驗證</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A1%AB%E5%AF%ABsitemap%E4%BD%8D%E7%BD%AE"><span class="nav-number">2.2.</span> <span class="nav-text">填寫sitemap位置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Trouble-Shooting"><span class="nav-number">3.</span> <span class="nav-text">Trouble Shooting</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%9B%A0"><span class="nav-number">1.</span> <span class="nav-text">原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">解法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Refference"><span class="nav-number">3.</span> <span class="nav-text">Refference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -210,7 +204,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://kevinwuu.dev/2021/07/20/hexo-sitemap/">
+    <link itemprop="mainEntityOfPage" href="https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -223,7 +217,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          [Hexo架站懶人包] - Sitemap設定
+          mapbox hover顯示popup問題
         </h1>
 
         <div class="post-meta-container">
@@ -233,16 +227,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">發表於</span>
+      
 
-      <time title="創建時間：2021-07-20 22:55:46" itemprop="dateCreated datePublished" datetime="2021-07-20T22:55:46+08:00">2021-07-20</time>
+      <time title="創建時間：2022-06-05 17:18:14 / 修改時間：17:50:33" itemprop="dateCreated datePublished" datetime="2022-06-05T17:18:14+08:00">2022-06-05</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：2022-05-01 00:43:56" itemprop="dateModified" datetime="2022-05-01T00:43:56+08:00">2022-05-01</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -263,45 +251,23 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><img src="/2021/07/20/hexo-sitemap/sitemap.png" alt="sitemap"></p>
-<h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
-<li>安裝自動產生sitemap的套件<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>設定根目錄下的_config.yml，自己是習慣把新的設定加在設定檔最後面(注意縮排!)</li>
-</ol>
+        <p><img src="/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/mapboxgl.png" alt="Mapbox GL"></p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>通常 mapbox 相關範例都是 click 某個點來顯示 popup，不過實際上也很常會需要在 hover 時顯示，同時 popup 上可能會有一些資訊可以點選</p>
+<p>但是如果你設定 mousein 開啟,mouseleave 關閉 popup，那麼在你移動到 popup 前就會因為離開 popup 而觸發關閉</p>
 <span id="more"></span>
 
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Sitemap</span></span><br><span class="line"><span class="comment"># https://github.com/hexojs/hexo-generator-sitemap</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line">    <span class="attr">template:</span> <span class="string">./sitemap_template.xml</span> <span class="comment"># 這行非必填，除非你想設定自訂的樣板</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>重新發布，產生新內容，<br>檢查/public下有沒有正確產生sitemap.xml。</li>
-</ol>
-<h2 id="Google-Search-Console設定"><a href="#Google-Search-Console設定" class="headerlink" title="Google Search Console設定"></a>Google Search Console設定</h2><p>在一開始進入 Google Search Console 之前必須先設定驗證自己的網站</p>
-<p><img src="/2021/07/20/hexo-sitemap/sitemap-1.png" alt="sitemap-1"></p>
-<h3 id="驗證"><a href="#驗證" class="headerlink" title="驗證"></a>驗證</h3><p>根據ithome的<a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10249885">文章</a>範例是建議使用網址前置字元做驗證。<br>不過在查教學文章前我就先使用網域的驗證方式成功了! :good<br>個人是覺得比教學簡單很多，只要輸入完網域後就會自動驗證成功。<br>特別標註為新功能，可能就是代表會比舊方法好用吧?</p>
-<p><img src="/2021/07/20/hexo-sitemap/sitemap-2.png" alt="sitemap-2"></p>
-<h3 id="填寫sitemap位置"><a href="#填寫sitemap位置" class="headerlink" title="填寫sitemap位置"></a>填寫sitemap位置</h3><p>首先先點選側邊欄中的Sitemap<br><img src="/2021/07/20/hexo-sitemap/sitemap-3.png"></p>
-<p><img src="/2021/07/20/hexo-sitemap/sitemap-4.png"></p>
-<p>如果成功提交後就會將結果顯示在已提交的Sitemap中</p>
-<h2 id="Trouble-Shooting"><a href="#Trouble-Shooting" class="headerlink" title="Trouble Shooting"></a>Trouble Shooting</h2><ul>
-<li><p>如果填寫sitemap位置失敗，記得檢查是否有填入完整網址</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://&lt;yoursite_domain&gt;/sitemap.xml</span><br></pre></td></tr></table></figure></li>
-<li><p>deploy完，sitemap.xml 找不到頁面<br>這篇文章有非常完整的解決方案，我自己是沒有遇到<br>如果有遇到的朋友可以參考看看<br><a target="_blank" rel="noopener" href="https://blog.kyomind.tw/adding-sitemap-issue/">解決 Hexo + Github Pages 新增 sitemap.xml 找不到頁面</a></p>
-</li>
-<li><p>提交成功，但是顯示狀態錯誤</p>
-</li>
+<h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><p>原先以為只是因為cluster本身跟popup中間有空隙導致觸發mouseout才發生<br>但其實這個問題有兩個原因造成</p>
+<ul>
+<li>離開 popup</li>
+<li>離開 map</li>
 </ul>
-<p><img src="/2021/07/20/hexo-sitemap/sitemap-err.png" alt="sitemap-err"></p>
-<p><img src="/2021/07/20/hexo-sitemap/sitemap-err-1.png" alt="sitemap-err-1"></p>
-<p>在提交後有，若出現這個錯誤：「可讀取 Sitemap，但其中含有錯誤」，表示 sitemap 裡面的網址跟當初在 Google Search Console 註冊的網址有所差異。</p>
-<p>由於自己後來有購買網域，所以現在網址已經不是當初Github page所提供的網址<br>必須回到_config.yml 更新 URL，才能跟sitemap填寫的網址匹配。</p>
-<p><a target="_blank" rel="noopener" href="https://ycjhuo.gitlab.io/blogs/The-first-step-of-SEO-how-to-tell-Google-the-way-to-find-your-website.html#%E6%8F%90%E4%BA%A4-sitemap-%E5%BE%8C-%E5%8F%AF%E8%83%BD%E7%94%A2%E7%94%9F%E7%9A%84%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF">參考連結</a></p>
+<p>mouseleave 不像原本所想的，是離開 layer 才觸發<br>而是離開特定 layer 或離開 map 都會觸發<br>由於 mapbox 的 popup 不像其他元件會畫在 canvas 中，而是畫在 map 外所以當滑鼠移動到popup上時也會判斷為離開 map。<br>看了看一些網路的文章後，有很多遇到跟我一樣問題的人，但都沒有看到有用的解法，所以最後決定自己實作</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> onMapLoad = <span class="function">() =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">if</span> (!mapRef.current) <span class="keyword">return</span>;</span><br><span class="line"> <span class="keyword">const</span> map = mapRef.current;</span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * Add custom mouse event for cluster and popup</span></span><br><span class="line"><span class="comment">  * to avoid popup close when mouse moved on popup.</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">let</span> isOnCluster = <span class="literal">false</span>;</span><br><span class="line"> map.on(<span class="string">&quot;mousemove&quot;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">   <span class="keyword">const</span> features = map.queryRenderedFeatures(e.point, &#123;</span><br><span class="line">     <span class="attr">layers</span>: [<span class="string">&quot;cluster-layer&quot;</span>, <span class="string">&quot;point-status-layer&quot;</span>],</span><br><span class="line">   &#125;);</span><br><span class="line"></span><br><span class="line">   <span class="keyword">if</span> (isOnCluster) &#123;</span><br><span class="line">     <span class="comment">// mouseleave cluster or point</span></span><br><span class="line">     <span class="keyword">if</span> (!features.length) &#123;</span><br><span class="line">       isOnCluster = <span class="literal">false</span>;</span><br><span class="line">       map.getCanvas().style.cursor = <span class="string">&quot;&quot;</span>;</span><br><span class="line">       setPopupInfo(<span class="literal">null</span>);</span><br><span class="line">     &#125;</span><br><span class="line">   &#125; <span class="keyword">else</span> <span class="keyword">if</span> (features.length) &#123;</span><br><span class="line">     <span class="comment">// mouseenter cluster or point</span></span><br><span class="line">     isOnCluster = <span class="literal">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
 <hr>
-<p>Refference</p>
-<p><a target="_blank" rel="noopener" href="https://askie.today/upload-sitemap-google-search-console-seo-hexo-blog/">輕鬆地提交 Hexo 部落格的 Sitemap.xml 到 Google Search Console</a><br><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10249885">(24) 試著學 Hexo - SEO 篇 - Google Search Console</a><br><a target="_blank" rel="noopener" href="https://jenifers001d.github.io/2019/12/09/SEO/SEO1-Website-is-Not-Showing-in-Google-Search/">SEO 優化 (一)：為什麼搜尋 (Google) 不到我的 Hexo 部落格？</a></p>
+<h2 id="Refference"><a href="#Refference" class="headerlink" title="Refference"></a>Refference</h2><p>一樣問題描述的文章<br><a target="_blank" rel="noopener" href="https://github.com/mapbox/mapbox-gl-js/issues/11491">Popup can stay when mouse goes to popup area from hovered point</a></p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/69866651/mapbox-add-popup-on-hover-layer-close-on-mouseleave-but-keep-open-on-popup-h">Mapbox add popup on hover (layer), close on mouseleave, but keep open on popup hover</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.notion.so/kevinwuuisme/Mapbox-GL-11edb60b7b054b4b85d278e44fb5ec0c#ee46847751d744b3b89894ed73f0d83f">https://www.notion.so/kevinwuuisme/Mapbox-GL-11edb60b7b054b4b85d278e44fb5ec0c#ee46847751d744b3b89894ed73f0d83f</a></p>
 
     </div>
 
@@ -311,20 +277,20 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/mapbox/" rel="tag"># mapbox</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/07/18/hexo-build-1/" rel="prev" title="Hexo 8 個人部落格架設">
-                  <i class="fa fa-chevron-left"></i> Hexo 8 個人部落格架設
+                <a href="/2022/06/04/hexo%E5%85%A5%E9%96%80/" rel="prev" title="[Hexo架站懶人包] - 入門">
+                  <i class="fa fa-chevron-left"></i> [Hexo架站懶人包] - 入門
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/06/04/hexo%E5%85%A5%E9%96%80/" rel="next" title="[Hexo架站懶人包] - 入門">
-                  [Hexo架站懶人包] - 入門 <i class="fa fa-chevron-right"></i>
+                <a href="/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/" rel="next" title="前端string計算width">
+                  前端string計算width <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

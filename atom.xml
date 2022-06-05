@@ -6,7 +6,7 @@
   <link href="https://kevinwuu.dev/atom.xml" rel="self"/>
   
   <link href="https://kevinwuu.dev/"/>
-  <updated>2022-06-05T08:17:59.950Z</updated>
+  <updated>2022-06-05T10:33:18.769Z</updated>
   <id>https://kevinwuu.dev/</id>
   
   <author>
@@ -17,20 +17,54 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>前端string計算width</title>
+    <link href="https://kevinwuu.dev/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/"/>
+    <id>https://kevinwuu.dev/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/</id>
+    <published>2022-06-05T09:56:33.000Z</published>
+    <updated>2022-06-05T10:33:18.769Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/debug.jpg&quot; alt=&quot;debug&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Target&quot;&gt;&lt;a href=&quot;#Target&quot; class=&quot;headerlink&quot; title=&quot;Target&quot;&gt;&lt;/a&gt;Target&lt;/h2&gt;&lt;p&gt;工作上遇過兩次不同的情況，一樣都是需要判斷字串是否overflow&lt;br&gt;但依據狀況的不同，適合使用的解法也會有所不同&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mapbox hover顯示popup問題</title>
+    <link href="https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/"/>
+    <id>https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/</id>
+    <published>2022-06-05T09:18:14.000Z</published>
+    <updated>2022-06-05T09:50:33.881Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/mapboxgl.png&quot; alt=&quot;Mapbox GL&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h2&gt;&lt;p&gt;通常 mapbox 相關範例都是 click 某個點來顯示 popup，不過實際上也很常會需要在 hover 時顯示，同時 popup 上可能會有一些資訊可以點選&lt;/p&gt;
+&lt;p&gt;但是如果你設定 mousein 開啟,mouseleave 關閉 popup，那麼在你移動到 popup 前就會因為離開 popup 而觸發關閉&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="前端" scheme="https://kevinwuu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="mapbox" scheme="https://kevinwuu.dev/tags/mapbox/"/>
+    
+  </entry>
+  
+  <entry>
     <title>[Hexo架站懶人包] - 入門</title>
     <link href="https://kevinwuu.dev/2022/06/04/hexo%E5%85%A5%E9%96%80/"/>
     <id>https://kevinwuu.dev/2022/06/04/hexo%E5%85%A5%E9%96%80/</id>
     <published>2022-06-03T16:00:00.000Z</published>
-    <updated>2022-06-05T08:17:59.950Z</updated>
+    <updated>2022-06-05T09:19:52.784Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;What’s-hexo&quot;&gt;&lt;a href=&quot;#What’s-hexo&quot; class=&quot;headerlink&quot; title=&quot;What’s hexo&quot;&gt;&lt;/a&gt;What’s</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;What’s-hexo&quot;&gt;&lt;a href=&quot;#What’s-hexo&quot; class=&quot;headerlink&quot; title=&quot;What’s hexo&quot;&gt;&lt;/a&gt;What’s hexo&lt;/h2&gt;&lt;p&gt;一種靜態網站產生器。&lt;/p&gt;
+&lt;p&gt;讓你可以用工程師最常用的md檔案產生網頁，建立自己的部落格&lt;/p&gt;
+&lt;p&gt;除了發布內容外，也有非常豐富的背景主題還實用套件讓開發者直接套用&lt;/p&gt;
+&lt;p&gt;如留言系統、訪客人數、RSS等&lt;/p&gt;</summary>
     
     
     
@@ -85,22 +119,6 @@
     
     
     <category term="hexo" scheme="https://kevinwuu.dev/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://kevinwuu.dev/2021/07/13/hello-world/"/>
-    <id>https://kevinwuu.dev/2021/07/13/hello-world/</id>
-    <published>2021-07-13T14:41:41.000Z</published>
-    <updated>2022-04-30T16:43:56.709Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;wegqwgqwhge&lt;br&gt;ewg&lt;/p&gt;</summary>
-    
-    
-    
     
   </entry>
   
