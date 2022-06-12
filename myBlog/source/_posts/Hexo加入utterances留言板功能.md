@@ -1,8 +1,8 @@
 ---
 title: Hexo加入utterances留言板功能
 date: 2022-06-12 21:52:43
-categories:
-tags:
+categories: 前端
+tags: hexo
 ---
 
 ![image2](image2.png)
@@ -55,3 +55,13 @@ utterances:
   theme: github-light
 ```
 
+### 讓分類與標籤頁沒有留言區
+
+留言區開關早已納入了 Hexo 內建的語法設定
+請在頁面所屬的 Markdown 檔案中，加入下列comments: false標籤，以分類頁為例：
+
+```markdown
+title: categories
+layout: categories
+comments: false
+---

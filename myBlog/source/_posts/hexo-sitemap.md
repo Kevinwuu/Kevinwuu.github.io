@@ -6,6 +6,7 @@ tags: hexo
 ---
 
 ![sitemap](sitemap.png)
+
 ## 步驟
 
 1. 安裝自動產生sitemap的套件[hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap)
