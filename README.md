@@ -11,12 +11,13 @@ Personal tech blog build by hexo & Github pages
 - [x] site map for Google Search Console
 - [x] publish first post
 - [x] avator
-- [ ] add comment plugin
+- [x] reading progress
+- [x] social account links (Github, Email)
+- [x] rss
+- [x] favicon
+- [x] add comment plugin
 - [ ] like coin support
 - [ ] hexo admin
-- [x] reading progress
-- [ ] work with typora
-- [x] social account links (Github, Email)
 - [ ] visitors
-- [x] rss
-- [ ] favicon
+- [ ] seo
+- [ ] GA
