@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 不為誰而寫的code
+title: cityboy程式男孩
 subtitle: '老少咸宜的技術教學'
-#description: 
+description: 簡介測試測試測試
 keywords:
 author: Ethan Wu
 language: zh-TW
@@ -18,8 +18,8 @@ url: https://kevinwuu.dev
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
