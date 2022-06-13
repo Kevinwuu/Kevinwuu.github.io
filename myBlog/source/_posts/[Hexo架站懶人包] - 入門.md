@@ -3,6 +3,7 @@ title: "[Hexo架站懶人包] - 入門"
 date: 2022-06-04
 categories: 前端
 tags: hexo
+urlname: "[Hexo架站懶人包] - 入門"
 ---
 
 

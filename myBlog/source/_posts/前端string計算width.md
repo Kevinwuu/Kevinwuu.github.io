@@ -1,8 +1,9 @@
 ---
 title: 前端string計算width
 date: 2022-06-05 17:56:33
-categories:
-tags:
+categories: 前端
+tags: js
+urlname: 前端string計算width
 ---
 
 ![debug](debug.jpg)

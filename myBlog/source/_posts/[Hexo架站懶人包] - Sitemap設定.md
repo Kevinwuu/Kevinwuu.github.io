@@ -3,6 +3,7 @@ title: "[Hexo架站懶人包] - Sitemap設定"
 date: 2021-07-20 22:55:46
 categories: 前端
 tags: hexo
+urlname: "[Hexo架站懶人包] - Sitemap設定"
 ---
 
 ![sitemap](sitemap.png)
