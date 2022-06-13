@@ -1,4 +1,7 @@
 # Hexo blog
+
+[![pages-build-deployment](https://github.com/Kevinwuu/Kevinwuu.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/Kevinwuu/Kevinwuu.github.io/actions/workflows/pages/pages-build-deployment)
+
 Personal tech blog build by hexo & Github pages
 
 [https://kevinwuu.dev](https://kevinwuu.dev)
