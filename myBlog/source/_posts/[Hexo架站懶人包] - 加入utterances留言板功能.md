@@ -3,7 +3,7 @@ title: "[Hexo架站懶人包] - 加入utterances留言板功能"
 date: 2022-06-12 21:52:43
 categories: 前端
 tags: hexo
-urlname: "[Hexo架站懶人包] - 加入utterances留言板功能"
+urlname: hexo-utterances-comment
 ---
 
 ![image2](image2.png)

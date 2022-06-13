@@ -3,7 +3,7 @@ title: "[Hexo架站懶人包] - 安裝Like Coin 讚賞鍵"
 date: 2022-06-13 22:43:00
 categories: 前端
 tags: hexo
-urlname: "[Hexo架站懶人包] - 安裝Like Coin 讚賞鍵"
+urlname: hexo-integrate-like-coin
 ---
 
 ![hexo_github](hexo_github.png)

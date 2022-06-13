@@ -3,7 +3,7 @@ title: "[Hexo架站懶人包] - 文章標題使用特殊字元"
 date: 2022-06-13 00:05:44
 categories: 前端
 tags: hexo
-urlname: "[Hexo架站懶人包] - 文章標題使用特殊字元"
+urlname: hexo-special-symbol-in-title
 ---
 
 ![hexo_github](hexo_github.png)

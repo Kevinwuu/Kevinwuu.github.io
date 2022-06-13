@@ -3,7 +3,7 @@ title: "[Hexo架站懶人包] - RSS"
 date: 2022-06-05 00:35:36
 categories: 前端
 tags: hexo
-urlname: "[Hexo架站懶人包] - RSS"
+urlname: hexo-rss-feed
 ---
 
 ![](rss.png)

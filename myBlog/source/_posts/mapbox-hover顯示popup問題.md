@@ -3,7 +3,7 @@ title: mapbox hover顯示popup問題
 date: 2022-06-05 17:18:14
 categories: 前端
 tags: mapbox
-urlname: mapbox hover顯示popup問題
+urlname: mapbox-hover-popup-issue
 ---
 
 ![Mapbox GL](mapboxgl.png)
