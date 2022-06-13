@@ -63,8 +63,6 @@ npm install
 
 ```
 
-### 
-
 - scaffolds
 鷹架資料夾。當您建立新文章時，Hexo 會根據 scaffold 來建立檔案。
 - source
@@ -79,17 +77,22 @@ Hexo 所需的套件資料
 - _config.yml
 設定專案的大部分配置，可以參考 Hexo 官網上的文件說明
 
-
 ## 常用指令
 
+[hexo寫作](https://hexo.io/zh-tw/docs/writing.html)
+
 ```bash
-hexo new [layout] <文章標題>
+# hexo new [layout] <文章標題>
 hexo new post "我的第一篇文章 By Hexo"
+hexo new page "about"
+hexo new draft "測試草稿"
+hexo publish draft "測試草稿"
 
-// local server on http://localhost:4000/
-hexo server
+# local server on http://localhost:4000/
+hexo server # hexo s
+hexo generate # hexo g
+hexo deploy # hexo d
 ```
-
 
 ### 搭配github page
 
@@ -116,6 +119,16 @@ deploy:
 ```bash
 hexo clean && hexo deploy
 ```
+
+也可以將常用指令組合寫進package.json
+
+```json
+"scripts": {
+  "deploy": "hexo cl && hexo g -d",
+  "dev": "hexo cl && hexo g && hexo s"
+}
+```
+
 
 ## 自訂 Domain 網域
 
