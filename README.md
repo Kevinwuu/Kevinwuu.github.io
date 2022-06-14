@@ -19,7 +19,10 @@ Personal tech blog build by hexo & Github pages
 - [x] rss
 - [x] favicon
 - [x] add comment plugin
-- [ ] like coin support
+- [x] like coin support
+- [x] series post in side menu
+- [ ] baidusitemap
+- [ ] relative post
 - [ ] hexo admin
 - [ ] visitors
 - [ ] seo
