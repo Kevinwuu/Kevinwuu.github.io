@@ -7,7 +7,7 @@ urlname: hexo-blog-hosting
 ---
 
 
-![](hexo_github.png)
+![hexo_github](../images/hexo_github.png)
 
 ## 前言
 

@@ -6,7 +6,7 @@ tags: js
 urlname: frontend-calculate-string-width
 ---
 
-![debug](debug.jpg)
+![debug](debug.png)
 
 ## Target
 

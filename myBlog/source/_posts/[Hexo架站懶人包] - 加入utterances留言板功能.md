@@ -6,7 +6,7 @@ tags: hexo
 urlname: hexo-utterances-comment
 ---
 
-![image2](image2.png)
+![hexo_github](../images/hexo_github.png)
 
 基本設定非常快速，因此不多贅述操作流程，單純描述遇到的一些問題以及參考文章
 

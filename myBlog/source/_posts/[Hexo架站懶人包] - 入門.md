@@ -6,6 +6,7 @@ tags: hexo
 urlname: hexo-basic
 ---
 
+![hexo_github](../images/hexo_github.png)
 
 ## What’s hexo
 

@@ -6,7 +6,7 @@ tags: hexo
 urlname: hexo-integrate-like-coin
 ---
 
-![hexo_github](hexo_github.png)
+![hexo_github](../images/hexo_github.png)
 
 [Like Coin官網教學](<https://docs.like.co/v/zh/user-guide/creator/self-host/hexo-next>)的內容引用自[只是個打字的](https://blog.typeart.cc/) 的教學文章，講解的已經滿清楚
 

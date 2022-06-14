@@ -6,7 +6,7 @@ tags: hexo
 urlname: hexo-special-symbol-in-title
 ---
 
-![hexo_github](hexo_github.png)
+![hexo_github](../images/hexo_github.png)
 
 ## Root cause
 
