@@ -2,7 +2,9 @@
 title: 使用Nginx在docker中host靜態網頁
 date: 2022-06-15 23:09:31
 categories:
-tags: nginx, docker, deploy
+tags:
+- nginx
+- docker
 urlname: host-html-in-docker-with-nginx
 ---
 
