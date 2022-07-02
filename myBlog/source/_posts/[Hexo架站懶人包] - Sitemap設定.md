@@ -4,7 +4,7 @@ date: 2021-07-20 22:55:46
 categories: 前端
 tags: hexo
 # urlname: hexo-sitemap
-urlname: "2021/07/20/hexo-sitemap"
+urlname: hexo-sitemap-setup
 ---
 
 ![sitemap](sitemap.png)
