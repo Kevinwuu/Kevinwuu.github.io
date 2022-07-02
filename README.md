@@ -4,7 +4,7 @@
 
 Personal tech blog build by hexo & Github pages
 
-[https://kevinwuu.dev](https://kevinwuu.dev)
+[https://chienwu.dev](https://chienwu.dev)
 
 ---
 
