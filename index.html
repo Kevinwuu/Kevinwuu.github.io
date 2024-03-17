@@ -19,24 +19,26 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"kevinwuu.dev","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"chienwu.dev","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="想要學會一件事，就先試著教會別人吧">
 <meta property="og:type" content="website">
-<meta property="og:title" content="不為誰而寫的code">
-<meta property="og:url" content="https://kevinwuu.dev/index.html">
-<meta property="og:site_name" content="不為誰而寫的code">
+<meta property="og:title" content="佛系寫手">
+<meta property="og:url" content="https://chienwu.dev/">
+<meta property="og:site_name" content="佛系寫手">
+<meta property="og:description" content="想要學會一件事，就先試著教會別人吧">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:author" content="Ethan Wu">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://kevinwuu.dev/">
+<link rel="canonical" href="https://chienwu.dev/">
 
 
 
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-TW","comments":"","permalink":"","path":"index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>不為誰而寫的code</title>
+<title>佛系寫手</title>
   
 
 
@@ -45,7 +47,7 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-<link rel="alternate" href="/atom.xml" title="不為誰而寫的code" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="佛系寫手" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -66,14 +68,14 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">不為誰而寫的code</h1>
+      <h1 class="site-title">佛系寫手</h1>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">老少咸宜的技術教學</p>
   </div>
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -82,15 +84,41 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li>
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li>
+        <li class="menu-item menu-item-hexo系列教學"><a href="/hexoSeries/" rel="section"><i class="fa fa-sitemap fa-fw"></i>HEXO系列教學</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
         
@@ -125,26 +153,26 @@
     <img class="site-author-image" itemprop="image" alt="Ethan Wu"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">Ethan Wu</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">想要學會一件事，就先試著教會別人吧</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -154,7 +182,7 @@
         <a href="https://github.com/Kevinwuu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Kevinwuu" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:hi@kevinwuu.dev" title="E-Mail → mailto:hi@kevinwuu.dev"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <a href="mailto:hi@chienwu.dev" title="E-Mail → mailto:hi@chienwu.dev"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
         <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fas fa-rss fa-fw"></i>RSS</a>
@@ -180,6 +208,8 @@
   </div>
   <div class="reading-progress-bar"></div>
 
+  <a href="https://github.com/Kevinwuu" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
@@ -195,20 +225,20 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kevinwuu.dev/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/git-merge-rebase-squash-difference/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不為誰而寫的code">
+      <meta itemprop="name" content="佛系寫手">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/" class="post-title-link" itemprop="url">前端string計算width</a>
+          <a href="/git-merge-rebase-squash-difference/" class="post-title-link" itemprop="url">Git merge, rebase與squash合併差別</a>
         </h2>
 
         <div class="post-meta-container">
@@ -220,80 +250,7 @@
       <span class="post-meta-item-text">發表於</span>
       
 
-      <time title="創建時間：2022-06-05 17:56:33 / 修改時間：18:33:18" itemprop="dateCreated datePublished" datetime="2022-06-05T17:56:33+08:00">2022-06-05</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/debug.jpg" alt="debug"></p>
-<h2 id="Target"><a href="#Target" class="headerlink" title="Target"></a>Target</h2><p>工作上遇過兩次不同的情況，一樣都是需要判斷字串是否overflow<br>但依據狀況的不同，適合使用的解法也會有所不同</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/#more" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不為誰而寫的code">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/" class="post-title-link" itemprop="url">mapbox hover顯示popup問題</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-      
-
-      <time title="創建時間：2022-06-05 17:18:14 / 修改時間：17:50:33" itemprop="dateCreated datePublished" datetime="2022-06-05T17:18:14+08:00">2022-06-05</time>
+      <time title="創建時間：2024-03-17 21:28:37 / 修改時間：22:00:35" itemprop="dateCreated datePublished" datetime="2024-03-17T21:28:37+08:00">2024-03-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -315,12 +272,118 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><img src="/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/mapboxgl.png" alt="Mapbox GL"></p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>通常 mapbox 相關範例都是 click 某個點來顯示 popup，不過實際上也很常會需要在 hover 時顯示，同時 popup 上可能會有一些資訊可以點選</p>
-<p>但是如果你設定 mousein 開啟,mouseleave 關閉 popup，那麼在你移動到 popup 前就會因為離開 popup 而觸發關閉</p>
+          <span id="more"></span>
+
+<p><img src="/../images/Git-merge-rebase%E8%88%87squash%E5%90%88%E4%BD%B5%E5%B7%AE%E5%88%A5/image.png"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在github或gitlab合併時常常會看到以下這幾種選項</p>
+<p><img src="/../images/Git-merge-rebase%E8%88%87squash%E5%90%88%E4%BD%B5%E5%B7%AE%E5%88%A5/github.png"></p>
+<p>很多時候只有被同事告知選哪個就好，一開始也不太有空了解其中差別<br>但隨著往後可能會進入不同公司的不同開發團隊，有可能會因此需要適應不同的方案跟開發習慣<br>因此還是決定自己實際下過指令看看，這樣之後才會更知道哪種選項更適合當時的情境~</p>
+<!--more-->
+
+<h3 id="檔案原始狀態"><a href="#檔案原始狀態" class="headerlink" title="檔案原始狀態:"></a>檔案原始狀態:</h3><p>主分支main有3筆commit: 1,2,3</p>
+<p>開發分支dev有兩筆commit: 4,5</p>
+<p>模擬實際開發情形，目標希望將dev開發完的新功能合併回main中。</p>
+<p><img src="/../images/Git-merge-rebase%E8%88%87squash%E5%90%88%E4%BD%B5%E5%B7%AE%E5%88%A5/image1.png"></p>
+<h3 id="merge"><a href="#merge" class="headerlink" title="merge:"></a>merge:</h3><p>從目標branch拉出一條線到目前分支上，並且多長出一個commit紀錄合併內容</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 要在main上操作</span></span><br><span class="line">git merge dev</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../images/Git-merge-rebase%E8%88%87squash%E5%90%88%E4%BD%B5%E5%B7%AE%E5%88%A5/image2.png"></p>
+<p>在main上把dev merge進來</p>
+<h3 id="squash"><a href="#squash" class="headerlink" title="squash:"></a>squash:</h3><p>目標brach不會拉出合併的線，目前分支會多出一筆commit叫squash</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 要在main上操作</span></span><br><span class="line">git merge --squash dev</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../images/Git-merge-rebase%E8%88%87squash%E5%90%88%E4%BD%B5%E5%B7%AE%E5%88%A5/image3.png"></p>
+<p>在main上merge dev</p>
+<h3 id="rebase"><a href="#rebase" class="headerlink" title="rebase:"></a>rebase:</h3><p>會把目標branch的所有commit接到base上</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 要在dev上操作</span></span><br><span class="line">git rebase main</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../images/Git-merge-rebase%E8%88%87squash%E5%90%88%E4%BD%B5%E5%B7%AE%E5%88%A5/image4.png"></p>
+<p>在dev上將main重新設為基準點把自己的commit接上去</p>
+<h2 id="Refference"><a href="#Refference" class="headerlink" title="Refference"></a>Refference</h2><p><a target="_blank" rel="noopener" href="https://www.team-bob.org/git-merge-squash-rebase/">[Git 筆記] merge、squash、rebase 三種方式的比較</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/google-domain-tutorial/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ethan Wu">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系寫手">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/google-domain-tutorial/" class="post-title-link" itemprop="url">Github page 搭配 Google domain 自訂網域</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-06-29 23:26:47" itemprop="dateCreated datePublished" datetime="2022-06-29T23:26:47+08:00">2022-06-29</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2024-03-17 22:00:25" itemprop="dateModified" datetime="2024-03-17T22:00:25+08:00">2024-03-17</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9E%B6%E7%AB%99/" itemprop="url" rel="index"><span itemprop="name">架站</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="/google-domain-tutorial/cover.png" alt="cover"></p>
+<p>本來以為只要買完網域設定後，在github repo設定就ok了<br>但殊不知在買網域的過程中和買完網域後都有踩了一些沒想過的問題，所以就順手紀錄當作備忘錄<br>一開始看了一些教學文發現有些資訊已經跟現在有點不太一樣，所以打算自己重寫一篇，不過後來又看到一篇不錯的文章於是作罷改為整理資訊與步驟的形式<br>推<a target="_blank" rel="noopener" href="https://kulan.dev/b200603/">完整教學文</a></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/#more" rel="contents">
+              <a class="btn" href="/google-domain-tutorial/#more" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -351,20 +414,636 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kevinwuu.dev/2022/06/04/hexo%E5%85%A5%E9%96%80/">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/host-html-in-docker-with-nginx/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不為誰而寫的code">
+      <meta itemprop="name" content="佛系寫手">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/06/04/hexo%E5%85%A5%E9%96%80/" class="post-title-link" itemprop="url">[Hexo架站懶人包] - 入門</a>
+          <a href="/host-html-in-docker-with-nginx/" class="post-title-link" itemprop="url">使用Nginx在docker中host靜態網頁</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-06-15 23:09:31" itemprop="dateCreated datePublished" datetime="2022-06-15T23:09:31+08:00">2022-06-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2022-06-19 14:24:15" itemprop="dateModified" datetime="2022-06-19T14:24:15+08:00">2022-06-19</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="/host-html-in-docker-with-nginx/nginx-hosting.png" alt="nginx-hosting"></p>
+<p>前陣子在公司新專案中引入了icon font，主要是為了讓單色icon圖檔的引用更加方便<br>由於平時只會把相關的style檔放在專案裡使用，偶爾想查找icon的class name時，就只能自己打開當初那包下載下來的zip去看demo.html有點不太方便</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/host-html-in-docker-with-nginx/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/hexo-integrate-like-coin/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ethan Wu">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系寫手">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/hexo-integrate-like-coin/" class="post-title-link" itemprop="url">[Hexo架站懶人包] - 安裝Like Coin 讚賞鍵</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-06-13 22:43:00" itemprop="dateCreated datePublished" datetime="2022-06-13T22:43:00+08:00">2022-06-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2022-06-19 14:24:15" itemprop="dateModified" datetime="2022-06-19T14:24:15+08:00">2022-06-19</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="/../images/hexo_github.png" alt="hexo_github"></p>
+<p><a target="_blank" rel="noopener" href="https://docs.like.co/v/zh/user-guide/creator/self-host/hexo-next">Like Coin官網教學</a>的內容引用自<a target="_blank" rel="noopener" href="https://blog.typeart.cc/">只是個打字的</a> 的教學文章，講解的已經滿清楚</p>
+<p>But!<br>之前在許多文章都提過，HEXO NEXT 版本6 → 8之後就有了滿大的改動，許多常用的套件設定都已經整合進config中<br>因此很多網路上看到的教學文章採用的設定方法已經不太適用</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/hexo-integrate-like-coin/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/hexo-special-symbol-in-title/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ethan Wu">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系寫手">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/hexo-special-symbol-in-title/" class="post-title-link" itemprop="url">[Hexo架站懶人包] - 文章標題使用特殊字元</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-06-13 00:05:44" itemprop="dateCreated datePublished" datetime="2022-06-13T00:05:44+08:00">2022-06-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2022-06-19 14:24:15" itemprop="dateModified" datetime="2022-06-19T14:24:15+08:00">2022-06-19</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="/../images/hexo_github.png" alt="hexo_github"></p>
+<h2 id="Root-cause"><a href="#Root-cause" class="headerlink" title="Root cause"></a>Root cause</h2><p>若在文章標題中使用特殊符號時 (例如：[] 中括號)，會出現錯誤訊息<br>主要是跟yml的格式有關，因此修改檔案或資料夾名稱不會有問題<br>但在<code>hexo new post</code>或是修改舊文章標題後<code>hexo s</code>都會跳錯<br><code>err: YAMLException: bad indentation of a mapping entry</code></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/hexo-special-symbol-in-title/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/hexo-utterances-comment/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ethan Wu">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系寫手">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/hexo-utterances-comment/" class="post-title-link" itemprop="url">[Hexo架站懶人包] - 加入utterances留言板功能</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-06-12 21:52:43" itemprop="dateCreated datePublished" datetime="2022-06-12T21:52:43+08:00">2022-06-12</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2022-06-19 14:24:15" itemprop="dateModified" datetime="2022-06-19T14:24:15+08:00">2022-06-19</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="/../images/hexo_github.png" alt="hexo_github"></p>
+<p>基本設定非常快速，因此不多贅述操作流程，單純描述遇到的一些問題以及參考文章</p>
+<p>常見的三個留言板第三方套件</p>
+<ul>
+<li>Disqus</li>
+<li>Gitalk</li>
+<li>utterances</li>
+</ul>
+<p>選擇思路可以參考以下連接<br><a target="_blank" rel="noopener" href="https://blog.kyomind.tw/hexo-blog-reply/">Hexo 新增 utterances 留言板與方案選擇思路</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/hexo-utterances-comment/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/frontend-calculate-string-width/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ethan Wu">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系寫手">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/frontend-calculate-string-width/" class="post-title-link" itemprop="url">前端string計算width</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-06-05 17:56:33" itemprop="dateCreated datePublished" datetime="2022-06-05T17:56:33+08:00">2022-06-05</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2022-06-19 14:24:15" itemprop="dateModified" datetime="2022-06-19T14:24:15+08:00">2022-06-19</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="/frontend-calculate-string-width/debug.png" alt="debug"></p>
+<h2 id="Target"><a href="#Target" class="headerlink" title="Target"></a>Target</h2><p>工作上遇過兩次不同的情況，一樣都是需要判斷字串是否overflow<br>但依據狀況的不同，適合使用的解法也會有所不同</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/frontend-calculate-string-width/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/mapbox-hover-popup-issue/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ethan Wu">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系寫手">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/mapbox-hover-popup-issue/" class="post-title-link" itemprop="url">mapbox hover顯示popup問題</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-06-05 17:18:14" itemprop="dateCreated datePublished" datetime="2022-06-05T17:18:14+08:00">2022-06-05</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2022-06-19 14:24:15" itemprop="dateModified" datetime="2022-06-19T14:24:15+08:00">2022-06-19</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="/mapbox-hover-popup-issue/mapboxgl.png" alt="Mapbox GL"></p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>通常 mapbox 相關範例都是 click 某個點來顯示 popup，不過實際上也很常會需要在 hover 時顯示，同時 popup 上可能會有一些資訊可以點選</p>
+<p>但是如果你設定 mousein 開啟,mouseleave 關閉 popup，那麼在你移動到 popup 前就會因為離開 popup 而觸發關閉</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/mapbox-hover-popup-issue/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/hexo-rss-feed/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ethan Wu">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系寫手">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/hexo-rss-feed/" class="post-title-link" itemprop="url">[Hexo架站懶人包] - RSS</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2022-06-05 00:35:36" itemprop="dateCreated datePublished" datetime="2022-06-05T00:35:36+08:00">2022-06-05</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：2022-06-19 14:24:15" itemprop="dateModified" datetime="2022-06-19T14:24:15+08:00">2022-06-19</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="/hexo-rss-feed/rss.png"></p>
+<h2 id="What’s-RSS"><a href="#What’s-RSS" class="headerlink" title="What’s RSS"></a>What’s RSS</h2><p>RSS的英文全稱是Really Simple Syndication<br>簡單來說，就是可以將網頁內容抽取出來變成一份xml檔，讓使用者透過RSS Feed的功能並配合RSS閱讀器，就可以直接在同一個地方，訂閱和閱讀自己有興趣的所有消息來源。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/hexo-rss-feed/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://chienwu.dev/hexo-basic/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Ethan Wu">
+      <meta itemprop="description" content="想要學會一件事，就先試著教會別人吧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系寫手">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/hexo-basic/" class="post-title-link" itemprop="url">[Hexo架站懶人包] - 入門</a>
         </h2>
 
         <div class="post-meta-container">
@@ -382,7 +1061,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：2022-06-05 17:19:52" itemprop="dateModified" datetime="2022-06-05T17:19:52+08:00">2022-06-05</time>
+        <time title="修改時間：2022-06-19 14:24:15" itemprop="dateModified" datetime="2022-06-19T14:24:15+08:00">2022-06-19</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -404,13 +1083,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="What’s-hexo"><a href="#What’s-hexo" class="headerlink" title="What’s hexo"></a>What’s hexo</h2><p>一種靜態網站產生器。</p>
+          <p><img src="/../images/hexo_github.png" alt="hexo_github"></p>
+<h2 id="What’s-hexo"><a href="#What’s-hexo" class="headerlink" title="What’s hexo"></a>What’s hexo</h2><p>一種靜態網站產生器。</p>
 <p>讓你可以用工程師最常用的md檔案產生網頁，建立自己的部落格</p>
 <p>除了發布內容外，也有非常豐富的背景主題還實用套件讓開發者直接套用</p>
 <p>如留言系統、訪客人數、RSS等</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/06/04/hexo%E5%85%A5%E9%96%80/#more" rel="contents">
+              <a class="btn" href="/hexo-basic/#more" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -433,189 +1113,9 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kevinwuu.dev/2021/07/20/hexo-sitemap/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不為誰而寫的code">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/20/hexo-sitemap/" class="post-title-link" itemprop="url">[Hexo架站懶人包] - Sitemap設定</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2021-07-20 22:55:46" itemprop="dateCreated datePublished" datetime="2021-07-20T22:55:46+08:00">2021-07-20</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：2022-05-01 00:43:56" itemprop="dateModified" datetime="2022-05-01T00:43:56+08:00">2022-05-01</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="/2021/07/20/hexo-sitemap/sitemap.png" alt="sitemap"></p>
-<h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
-<li>安裝自動產生sitemap的套件<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>設定根目錄下的_config.yml，自己是習慣把新的設定加在設定檔最後面(注意縮排!)</li>
-</ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/07/20/hexo-sitemap/#more" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kevinwuu.dev/2021/07/18/hexo-build-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Ethan Wu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不為誰而寫的code">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/18/hexo-build-1/" class="post-title-link" itemprop="url">Hexo 8 個人部落格架設</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">發表於</span>
-
-      <time title="創建時間：2021-07-18 11:19:10" itemprop="dateCreated datePublished" datetime="2021-07-18T11:19:10+08:00">2021-07-18</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：2022-05-01 00:43:56" itemprop="dateModified" datetime="2022-05-01T00:43:56+08:00">2022-05-01</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分類於</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="/2021/07/18/hexo-build-1/hexo_github.png"></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>身為一個工程師，平時總是需要不斷的更新自己的現有知識避免再度踩到類似的坑<br>寫筆記應該算是人人都會做的事，然而每次當要講解給別人聽時才發現其實我們常常太過簡化一個知識的架構，導致最後其實只是寫給自己當備忘錄而已<br>而這時候練習寫部落格就是一件很有幫助的事了</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/07/18/hexo-build-1/#more" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一頁"></i></a>
+  </nav>
 
 </div>
   </main>
@@ -626,7 +1126,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -641,6 +1141,7 @@
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
@@ -650,6 +1151,8 @@
 
 
 
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Kevinwuu/Kevinwuu.github.io","issue_term":"title","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
 
 </body>
 </html>

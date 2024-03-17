@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>不為誰而寫的code</title>
-  <icon>https://kevinwuu.dev/icon.png</icon>
-  <subtitle>老少咸宜的技術教學</subtitle>
-  <link href="https://kevinwuu.dev/atom.xml" rel="self"/>
+  <title>佛系寫手</title>
+  <icon>https://chienwu.dev/icon.png</icon>
   
-  <link href="https://kevinwuu.dev/"/>
-  <updated>2022-06-05T10:33:18.769Z</updated>
-  <id>https://kevinwuu.dev/</id>
+  <link href="https://chienwu.dev/atom.xml" rel="self"/>
+  
+  <link href="https://chienwu.dev/"/>
+  <updated>2024-03-17T14:00:35.735Z</updated>
+  <id>https://chienwu.dev/</id>
   
   <author>
     <name>Ethan Wu</name>
@@ -17,73 +17,232 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git merge, rebase與squash合併差別</title>
+    <link href="https://chienwu.dev/git-merge-rebase-squash-difference/"/>
+    <id>https://chienwu.dev/git-merge-rebase-squash-difference/</id>
+    <published>2024-03-17T13:28:37.000Z</published>
+    <updated>2024-03-17T14:00:35.735Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;p&gt;&lt;img src=&quot;/../images/Git-merge-rebase%E8%88%87squash%E5%90%88%E4%BD%B5%E5%B7%AE%E5%88%A5/image.png&quot;&gt;&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="git" scheme="https://chienwu.dev/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github page 搭配 Google domain 自訂網域</title>
+    <link href="https://chienwu.dev/google-domain-tutorial/"/>
+    <id>https://chienwu.dev/google-domain-tutorial/</id>
+    <published>2022-06-29T15:26:47.000Z</published>
+    <updated>2024-03-17T14:00:25.401Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/google-domain-tutorial/cover.png&quot; alt=&quot;cover&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本來以為只要買完網域設定後，在github repo設定就ok了&lt;br&gt;但殊不知在買網域的過程中和買完網域後都有踩了一些沒想過的問題，所以就順手紀錄當作備忘錄&lt;br&gt;一開始看了一些教學文發現有些資訊已經跟現在有點不太一樣，所以打算自己重寫一篇，不過後來又看到一篇不錯的文章於是作罷改為整理資訊與步驟的形式&lt;br&gt;推&lt;a href=&quot;https://kulan.dev/b200603/&quot;&gt;完整教學文&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="架站" scheme="https://chienwu.dev/categories/%E6%9E%B6%E7%AB%99/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用Nginx在docker中host靜態網頁</title>
+    <link href="https://chienwu.dev/host-html-in-docker-with-nginx/"/>
+    <id>https://chienwu.dev/host-html-in-docker-with-nginx/</id>
+    <published>2022-06-15T15:09:31.000Z</published>
+    <updated>2022-06-19T06:24:15.121Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/host-html-in-docker-with-nginx/nginx-hosting.png&quot; alt=&quot;nginx-hosting&quot;&gt;&lt;/p&gt;
+&lt;p&gt;前陣子在公司新專案中引入了icon font，主要是為了讓單色icon圖檔的引用更加方便&lt;br&gt;由於平時只會把相關的style檔放在專案裡使用，偶爾想查找icon的class name時，就只能自己打開當初那包下載下來的zip去看demo.html有點不太方便&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="nginx" scheme="https://chienwu.dev/tags/nginx/"/>
+    
+    <category term="docker" scheme="https://chienwu.dev/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Hexo架站懶人包] - 安裝Like Coin 讚賞鍵</title>
+    <link href="https://chienwu.dev/hexo-integrate-like-coin/"/>
+    <id>https://chienwu.dev/hexo-integrate-like-coin/</id>
+    <published>2022-06-13T14:43:00.000Z</published>
+    <updated>2022-06-19T06:24:15.107Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/../images/hexo_github.png&quot; alt=&quot;hexo_github&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.like.co/v/zh/user-guide/creator/self-host/hexo-next&quot;&gt;Like Coin官網教學&lt;/a&gt;的內容引用自&lt;a href=&quot;https://blog.typeart.cc/&quot;&gt;只是個打字的&lt;/a&gt; 的教學文章，講解的已經滿清楚&lt;/p&gt;
+&lt;p&gt;But!&lt;br&gt;之前在許多文章都提過，HEXO NEXT 版本6 → 8之後就有了滿大的改動，許多常用的套件設定都已經整合進config中&lt;br&gt;因此很多網路上看到的教學文章採用的設定方法已經不太適用&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="hexo" scheme="https://chienwu.dev/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Hexo架站懶人包] - 文章標題使用特殊字元</title>
+    <link href="https://chienwu.dev/hexo-special-symbol-in-title/"/>
+    <id>https://chienwu.dev/hexo-special-symbol-in-title/</id>
+    <published>2022-06-12T16:05:44.000Z</published>
+    <updated>2022-06-19T06:24:15.116Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/../images/hexo_github.png&quot; alt=&quot;hexo_github&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Root-cause&quot;&gt;&lt;a href=&quot;#Root-cause&quot; class=&quot;headerlink&quot; title=&quot;Root cause&quot;&gt;&lt;/a&gt;Root cause&lt;/h2&gt;&lt;p&gt;若在文章標題中使用特殊符號時 (例如：[] 中括號)，會出現錯誤訊息&lt;br&gt;主要是跟yml的格式有關，因此修改檔案或資料夾名稱不會有問題&lt;br&gt;但在&lt;code&gt;hexo new post&lt;/code&gt;或是修改舊文章標題後&lt;code&gt;hexo s&lt;/code&gt;都會跳錯&lt;br&gt;&lt;code&gt;err: YAMLException: bad indentation of a mapping entry&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="hexo" scheme="https://chienwu.dev/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Hexo架站懶人包] - 加入utterances留言板功能</title>
+    <link href="https://chienwu.dev/hexo-utterances-comment/"/>
+    <id>https://chienwu.dev/hexo-utterances-comment/</id>
+    <published>2022-06-12T13:52:43.000Z</published>
+    <updated>2022-06-19T06:24:15.106Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/../images/hexo_github.png&quot; alt=&quot;hexo_github&quot;&gt;&lt;/p&gt;
+&lt;p&gt;基本設定非常快速，因此不多贅述操作流程，單純描述遇到的一些問題以及參考文章&lt;/p&gt;
+&lt;p&gt;常見的三個留言板第三方套件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disqus&lt;/li&gt;
+&lt;li&gt;Gitalk&lt;/li&gt;
+&lt;li&gt;utterances&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;選擇思路可以參考以下連接&lt;br&gt;&lt;a href=&quot;https://blog.kyomind.tw/hexo-blog-reply/&quot;&gt;Hexo 新增 utterances 留言板與方案選擇思路&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="hexo" scheme="https://chienwu.dev/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>前端string計算width</title>
-    <link href="https://kevinwuu.dev/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/"/>
-    <id>https://kevinwuu.dev/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/</id>
+    <link href="https://chienwu.dev/frontend-calculate-string-width/"/>
+    <id>https://chienwu.dev/frontend-calculate-string-width/</id>
     <published>2022-06-05T09:56:33.000Z</published>
-    <updated>2022-06-05T10:33:18.769Z</updated>
+    <updated>2022-06-19T06:24:15.132Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2022/06/05/%E5%89%8D%E7%AB%AFstring%E8%A8%88%E7%AE%97width/debug.jpg&quot; alt=&quot;debug&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/frontend-calculate-string-width/debug.png&quot; alt=&quot;debug&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;Target&quot;&gt;&lt;a href=&quot;#Target&quot; class=&quot;headerlink&quot; title=&quot;Target&quot;&gt;&lt;/a&gt;Target&lt;/h2&gt;&lt;p&gt;工作上遇過兩次不同的情況，一樣都是需要判斷字串是否overflow&lt;br&gt;但依據狀況的不同，適合使用的解法也會有所不同&lt;/p&gt;</summary>
     
     
     
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://chienwu.dev/tags/js/"/>
     
   </entry>
   
   <entry>
     <title>mapbox hover顯示popup問題</title>
-    <link href="https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/"/>
-    <id>https://kevinwuu.dev/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/</id>
+    <link href="https://chienwu.dev/mapbox-hover-popup-issue/"/>
+    <id>https://chienwu.dev/mapbox-hover-popup-issue/</id>
     <published>2022-06-05T09:18:14.000Z</published>
-    <updated>2022-06-05T09:50:33.881Z</updated>
+    <updated>2022-06-19T06:24:15.119Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2022/06/05/mapbox-hover%E9%A1%AF%E7%A4%BApopup%E5%95%8F%E9%A1%8C/mapboxgl.png&quot; alt=&quot;Mapbox GL&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/mapbox-hover-popup-issue/mapboxgl.png&quot; alt=&quot;Mapbox GL&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h2&gt;&lt;p&gt;通常 mapbox 相關範例都是 click 某個點來顯示 popup，不過實際上也很常會需要在 hover 時顯示，同時 popup 上可能會有一些資訊可以點選&lt;/p&gt;
 &lt;p&gt;但是如果你設定 mousein 開啟,mouseleave 關閉 popup，那麼在你移動到 popup 前就會因為離開 popup 而觸發關閉&lt;/p&gt;</summary>
     
     
     
-    <category term="前端" scheme="https://kevinwuu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="mapbox" scheme="https://kevinwuu.dev/tags/mapbox/"/>
+    <category term="mapbox" scheme="https://chienwu.dev/tags/mapbox/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Hexo架站懶人包] - RSS</title>
+    <link href="https://chienwu.dev/hexo-rss-feed/"/>
+    <id>https://chienwu.dev/hexo-rss-feed/</id>
+    <published>2022-06-04T16:35:36.000Z</published>
+    <updated>2022-06-19T06:24:15.094Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/hexo-rss-feed/rss.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;What’s-RSS&quot;&gt;&lt;a href=&quot;#What’s-RSS&quot; class=&quot;headerlink&quot; title=&quot;What’s RSS&quot;&gt;&lt;/a&gt;What’s RSS&lt;/h2&gt;&lt;p&gt;RSS的英文全稱是Really Simple Syndication&lt;br&gt;簡單來說，就是可以將網頁內容抽取出來變成一份xml檔，讓使用者透過RSS Feed的功能並配合RSS閱讀器，就可以直接在同一個地方，訂閱和閱讀自己有興趣的所有消息來源。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="hexo" scheme="https://chienwu.dev/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>[Hexo架站懶人包] - 入門</title>
-    <link href="https://kevinwuu.dev/2022/06/04/hexo%E5%85%A5%E9%96%80/"/>
-    <id>https://kevinwuu.dev/2022/06/04/hexo%E5%85%A5%E9%96%80/</id>
+    <link href="https://chienwu.dev/hexo-basic/"/>
+    <id>https://chienwu.dev/hexo-basic/</id>
     <published>2022-06-03T16:00:00.000Z</published>
-    <updated>2022-06-05T09:19:52.784Z</updated>
+    <updated>2022-06-19T06:24:15.102Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;What’s-hexo&quot;&gt;&lt;a href=&quot;#What’s-hexo&quot; class=&quot;headerlink&quot; title=&quot;What’s hexo&quot;&gt;&lt;/a&gt;What’s hexo&lt;/h2&gt;&lt;p&gt;一種靜態網站產生器。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/../images/hexo_github.png&quot; alt=&quot;hexo_github&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;What’s-hexo&quot;&gt;&lt;a href=&quot;#What’s-hexo&quot; class=&quot;headerlink&quot; title=&quot;What’s hexo&quot;&gt;&lt;/a&gt;What’s hexo&lt;/h2&gt;&lt;p&gt;一種靜態網站產生器。&lt;/p&gt;
 &lt;p&gt;讓你可以用工程師最常用的md檔案產生網頁，建立自己的部落格&lt;/p&gt;
 &lt;p&gt;除了發布內容外，也有非常豐富的背景主題還實用套件讓開發者直接套用&lt;/p&gt;
 &lt;p&gt;如留言系統、訪客人數、RSS等&lt;/p&gt;</summary>
     
     
     
-    <category term="前端" scheme="https://kevinwuu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="hexo" scheme="https://kevinwuu.dev/tags/hexo/"/>
+    <category term="hexo" scheme="https://chienwu.dev/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>[Hexo架站懶人包] - Sitemap設定</title>
-    <link href="https://kevinwuu.dev/2021/07/20/hexo-sitemap/"/>
-    <id>https://kevinwuu.dev/2021/07/20/hexo-sitemap/</id>
+    <link href="https://chienwu.dev/hexo-sitemap-setup/"/>
+    <id>https://chienwu.dev/hexo-sitemap-setup/</id>
     <published>2021-07-20T14:55:46.000Z</published>
-    <updated>2022-04-30T16:43:56.711Z</updated>
+    <updated>2024-03-17T14:00:25.416Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/07/20/hexo-sitemap/sitemap.png&quot; alt=&quot;sitemap&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/hexo-sitemap-setup/sitemap.png&quot; alt=&quot;sitemap&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;步驟&quot;&gt;&lt;a href=&quot;#步驟&quot; class=&quot;headerlink&quot; title=&quot;步驟&quot;&gt;&lt;/a&gt;步驟&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;安裝自動產生sitemap的套件&lt;a href=&quot;https://github.com/hexojs/hexo-generator-sitemap&quot;&gt;hexo-generator-sitemap&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -95,30 +254,30 @@
     
     
     
-    <category term="前端" scheme="https://kevinwuu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="hexo" scheme="https://kevinwuu.dev/tags/hexo/"/>
+    <category term="hexo" scheme="https://chienwu.dev/tags/hexo/"/>
     
   </entry>
   
   <entry>
-    <title>Hexo 8 個人部落格架設</title>
-    <link href="https://kevinwuu.dev/2021/07/18/hexo-build-1/"/>
-    <id>https://kevinwuu.dev/2021/07/18/hexo-build-1/</id>
+    <title>[Hexo架站懶人包] - Hexo 8 個人部落格架設</title>
+    <link href="https://chienwu.dev/hexo-blog-hosting/"/>
+    <id>https://chienwu.dev/hexo-blog-hosting/</id>
     <published>2021-07-18T03:19:10.000Z</published>
-    <updated>2022-04-30T16:43:56.710Z</updated>
+    <updated>2022-06-19T06:24:15.090Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/07/18/hexo-build-1/hexo_github.png&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/../images/hexo_github.png&quot; alt=&quot;hexo_github&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;身為一個工程師，平時總是需要不斷的更新自己的現有知識避免再度踩到類似的坑&lt;br&gt;寫筆記應該算是人人都會做的事，然而每次當要講解給別人聽時才發現其實我們常常太過簡化一個知識的架構，導致最後其實只是寫給自己當備忘錄而已&lt;br&gt;而這時候練習寫部落格就是一件很有幫助的事了&lt;/p&gt;</summary>
     
     
     
-    <category term="前端" scheme="https://kevinwuu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://chienwu.dev/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="hexo" scheme="https://kevinwuu.dev/tags/hexo/"/>
+    <category term="hexo" scheme="https://chienwu.dev/tags/hexo/"/>
     
   </entry>
   
