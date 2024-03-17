@@ -27,3 +27,18 @@ Personal tech blog build by hexo & Github pages
 - [ ] visitors
 - [ ] seo
 - [ ] GA
+
+
+## Command
+
+Preview
+```shell
+// hexo cl && hexo g && hexo s
+npm run dev
+```
+
+Deploy
+```
+// hexo cl && hexo g -d
+npm run deploy
+```
