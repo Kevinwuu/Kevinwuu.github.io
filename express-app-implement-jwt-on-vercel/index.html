@@ -20,16 +20,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"chienwu.dev","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="主要希望可以實作看看，前後端在派發和驗證jwt的流程和語法 所以主要只有依照參考文章內容去實作功能而已 使用 JWT 來驗證請求者身分 差別在我是直接用express generator產生專案後在去修改 1express myExpressApp   ps:一開始下cli沒設定模板會使用jade引擎，個人覺得ejs比較容易上手一些，所以後續又手動修改配置為ejs 1express myExpre">
+<meta name="description" content="前言主要希望可以實作看看，前後端在派發和驗證jwt的流程和語法 所以主要只有依照參考文章內容去實作功能而已 使用 JWT 來驗證請求者身分 上述文章有提供程式碼連結可以自行參考:link 差別在我是直接用express generator產生專案後再去修改，所以可能需要做些小調整">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在Vercel上部署Express實作JWT應用">
 <meta property="og:url" content="https://chienwu.dev/express-app-implement-jwt-on-vercel/">
 <meta property="og:site_name" content="佛系寫手">
-<meta property="og:description" content="主要希望可以實作看看，前後端在派發和驗證jwt的流程和語法 所以主要只有依照參考文章內容去實作功能而已 使用 JWT 來驗證請求者身分 差別在我是直接用express generator產生專案後在去修改 1express myExpressApp   ps:一開始下cli沒設定模板會使用jade引擎，個人覺得ejs比較容易上手一些，所以後續又手動修改配置為ejs 1express myExpre">
+<meta property="og:description" content="前言主要希望可以實作看看，前後端在派發和驗證jwt的流程和語法 所以主要只有依照參考文章內容去實作功能而已 使用 JWT 來驗證請求者身分 上述文章有提供程式碼連結可以自行參考:link 差別在我是直接用express generator產生專案後再去修改，所以可能需要做些小調整">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://chienwu.dev/images/%E5%9C%A8Vercel%E4%B8%8A%E9%83%A8%E7%BD%B2Express%E5%AF%A6%E4%BD%9CJWT%E6%87%89%E7%94%A8/404.png">
 <meta property="article:published_time" content="2024-03-19T07:23:03.000Z">
-<meta property="article:modified_time" content="2024-03-19T16:10:06.994Z">
+<meta property="article:modified_time" content="2024-03-20T03:17:54.886Z">
 <meta property="article:author" content="Ethan Wu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://chienwu.dev/images/%E5%9C%A8Vercel%E4%B8%8A%E9%83%A8%E7%BD%B2Express%E5%AF%A6%E4%BD%9CJWT%E6%87%89%E7%94%A8/404.png">
@@ -148,7 +148,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%BB%E9%99%A4%E7%94%A2%E7%94%9F%E5%99%A8%E7%9A%84%E5%A4%9A%E9%A4%98%E5%85%A7%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">移除產生器的多餘內容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Issues"><span class="nav-number"></span> <span class="nav-text">Issues</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Refference"><span class="nav-number"></span> <span class="nav-text">Refference</span></a></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%BB%E9%99%A4%E7%94%A2%E7%94%9F%E5%99%A8%E7%9A%84%E5%A4%9A%E9%A4%98%E5%85%A7%E5%AE%B9"><span class="nav-number">2.</span> <span class="nav-text">移除產生器的多餘內容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Issues"><span class="nav-number">3.</span> <span class="nav-text">Issues</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Refference"><span class="nav-number">4.</span> <span class="nav-text">Refference</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -262,8 +262,17 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：2024-03-20 00:10:06" itemprop="dateModified" datetime="2024-03-20T00:10:06+08:00">2024-03-20</time>
+        <time title="修改時間：2024-03-20 11:17:54" itemprop="dateModified" datetime="2024-03-20T11:17:54+08:00">2024-03-20</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+    </span>
 
   
 </div>
@@ -275,20 +284,30 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>主要希望可以實作看看，前後端在派發和驗證jwt的流程和語法</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>主要希望可以實作看看，前後端在派發和驗證jwt的流程和語法</p>
 <p>所以主要只有依照參考文章內容去實作功能而已</p>
 <p><a target="_blank" rel="noopener" href="https://ken00535.medium.com/%E4%BD%BF%E7%94%A8-jwt-%E4%BE%86%E9%A9%97%E8%AD%89%E8%AB%8B%E6%B1%82%E8%80%85%E8%BA%AB%E5%88%86-285c74f4dc5c">使用 JWT 來驗證請求者身分</a></p>
-<p>差別在我是直接用express generator產生專案後在去修改</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">express myExpressApp </span><br></pre></td></tr></table></figure>
+<p>上述文章有提供程式碼連結可以自行參考:<br><a target="_blank" rel="noopener" href="https://github.com/ken00535/nodejs-medium-example/tree/master/jwt">link</a></p>
+<p>差別在我是直接用express generator產生專案後再去修改，所以可能需要做些小調整</p>
+<span id="more"></span>
 
-<p>ps:<br>一開始下cli沒設定模板會使用jade引擎，個人覺得ejs比較容易上手一些，所以後續又手動修改配置為ejs</p>
+<p>ps:<br>一開始下cli忘了設定模板會使用jade引擎，個人覺得ejs比較容易上手一些，所以後續又手動修改配置為ejs</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">express myExpressApp -e --ejs</span><br></pre></td></tr></table></figure>
 
-<h3 id="移除產生器的多餘內容"><a href="#移除產生器的多餘內容" class="headerlink" title="移除產生器的多餘內容"></a>移除產生器的多餘內容</h3><ul>
+<h2 id="移除產生器的多餘內容"><a href="#移除產生器的多餘內容" class="headerlink" title="移除產生器的多餘內容"></a>移除產生器的多餘內容</h2><ul>
 <li>拿掉users相關route</li>
 <li>render error內容可移除</li>
 </ul>
 <h2 id="Issues"><a href="#Issues" class="headerlink" title="Issues"></a>Issues</h2><ul>
+<li><p><strong>local跑的時候發生cors</strong></p>
+<p>  跑起來的url是用localhost，教學文章裡打api是用127.0.0.1</p>
+<p>  兩邊改成統一就好了</p>
+</li>
+<li><p><strong>vercel上打API沒反應</strong></p>
+<p>  實際部署完後API路徑就應該要改成正式url而不是localhost不然會找不到，需要想個方法可以動態改變打API時的路徑</p>
+<p>  本來打算透過.env判斷現在環境來塞進不同的值，或是把寫死的地方改為使用window.location.href之類</p>
+<p>  後來發現vercel上加入環境變數後，再透過process.env帶入感覺比較簡單</p>
+</li>
 <li><p><strong>css/main.css拿不到</strong></p>
 <p>  express assest路徑會去抓public資料夾底下，裡面內建已經有幾個像是stylesheet,images,javascripts等空資料夾<br>把stylesheet改成css後再將檔案放入就行了</p>
 </li>
@@ -298,12 +317,7 @@
 </li>
 </ul>
 <pre><code>![](../images/在Vercel上部署Express實作JWT應用/code.png)
-
-**在vercel上**
 </code></pre>
-<span id="more"></span>
-
-
 <h2 id="Refference"><a href="#Refference" class="headerlink" title="Refference"></a>Refference</h2><p><a target="_blank" rel="noopener" href="https://israynotarray.com/nodejs/20230425/1940966356/">Express 部署到 Vercel</a></p>
 
     </div>
