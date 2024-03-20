@@ -7,8 +7,10 @@ on:
   push:
       branches:
         - main
-  issue_comment:
-    types: [ created ]
+  issues:
+      types: [opened, edited]
+  # issue_comment:
+  #   types: [created, edited]
 
 # 設定 job 的內容
 jobs:
