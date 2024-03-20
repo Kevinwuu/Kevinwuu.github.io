@@ -6,7 +6,7 @@ name: Telegram Deploy Notification
 on:
   push:
       branches:
-        - main
+        - gh-pages
   issues:
       types: [opened, edited]
   # issue_comment:
