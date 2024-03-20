@@ -69,26 +69,6 @@
       </categories>
   </entry>
   <entry>
-    <title>[Hexo架站懶人包] - Hexo 8 個人部落格架設</title>
-    <url>/hexo-blog-hosting/</url>
-    <content><![CDATA[<p><img src="/../images/hexo_github.png" alt="hexo_github"></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>身為一個工程師，平時總是需要不斷的更新自己的現有知識避免再度踩到類似的坑<br>寫筆記應該算是人人都會做的事，然而每次當要講解給別人聽時才發現其實我們常常太過簡化一個知識的架構，導致最後其實只是寫給自己當備忘錄而已<br>而這時候練習寫部落格就是一件很有幫助的事了</p>
-<span id="more"></span>
-
-<h2 id="Hexo介紹"><a href="#Hexo介紹" class="headerlink" title="Hexo介紹"></a>Hexo介紹</h2><p>靜態部落格產生器</p>
-<h2 id="開始架站"><a href="#開始架站" class="headerlink" title="開始架站"></a>開始架站</h2><ol>
-<li>在Github新增一個新的repo，如果將來</li>
-<li>到Setting</li>
-</ol>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>[Hexo架站懶人包] - RSS</title>
     <url>/hexo-rss-feed/</url>
     <content><![CDATA[<p><img src="/hexo-rss-feed/rss.png"></p>
@@ -115,6 +95,26 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># RSS</span><br><span class="line"># https://github.com/hexojs/hexo-generator-feed</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: &#x27; &#x27;</span><br><span class="line">  order_by: -date</span><br><span class="line">  icon: icon.png</span><br><span class="line">  autodiscovery:true</span><br><span class="line">  template:</span><br></pre></td></tr></table></figure>
 
 <!--more-->]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Hexo架站懶人包] - Hexo 8 個人部落格架設</title>
+    <url>/hexo-blog-hosting/</url>
+    <content><![CDATA[<p><img src="/../images/hexo_github.png" alt="hexo_github"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>身為一個工程師，平時總是需要不斷的更新自己的現有知識避免再度踩到類似的坑<br>寫筆記應該算是人人都會做的事，然而每次當要講解給別人聽時才發現其實我們常常太過簡化一個知識的架構，導致最後其實只是寫給自己當備忘錄而已<br>而這時候練習寫部落格就是一件很有幫助的事了</p>
+<span id="more"></span>
+
+<h2 id="Hexo介紹"><a href="#Hexo介紹" class="headerlink" title="Hexo介紹"></a>Hexo介紹</h2><p>靜態部落格產生器</p>
+<h2 id="開始架站"><a href="#開始架站" class="headerlink" title="開始架站"></a>開始架站</h2><ol>
+<li>在Github新增一個新的repo，如果將來</li>
+<li>到Setting</li>
+</ol>
+]]></content>
       <categories>
         <category>前端</category>
       </categories>
