@@ -151,6 +151,13 @@
   </url>
   
   <url>
+    <loc>https://chienwu.dev/tags/mapbox/</loc>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chienwu.dev/tags/nginx/</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>daily</changefreq>
@@ -159,13 +166,6 @@
   
   <url>
     <loc>https://chienwu.dev/tags/docker/</loc>
-    <lastmod>2024-03-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chienwu.dev/tags/mapbox/</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
