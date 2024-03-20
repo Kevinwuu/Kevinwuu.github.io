@@ -48,13 +48,13 @@ jobs:
       if: github.event_name == 'issues'
       steps:
       - name: send message on push
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{ secrets.ID }}
-        token: ${{ secrets.TOKEN }}
-        message:  |
-          New Issue ${{github.event.action}}
-          echo "Issue Title: ${{ github.event.issue.title }}"
-          echo "Issue Body: ${{ github.event.issue.body }}"
-          echo "Issue Creator: ${{ github.event.issue.user.login }}"
-          echo "Commenter: ${{ github.event.comment.user.login }}"
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.ID }}
+          token: ${{ secrets.TOKEN }}
+          message:  |
+            New Issue ${{github.event.action}}
+            echo "Issue Title: ${{ github.event.issue.title }}"
+            echo "Issue Body: ${{ github.event.issue.body }}"
+            echo "Issue Creator: ${{ github.event.issue.user.login }}"
+            echo "Commenter: ${{ github.event.comment.user.login }}"
