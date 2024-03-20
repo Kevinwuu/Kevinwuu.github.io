@@ -20,6 +20,7 @@ jobs:
     name: Build
     # action 執行的環境
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/gh-pages'
     steps:
     # 再點入上面的流程看詳細執行狀況時，會顯示下面的名字
     - name: send message on push
@@ -40,3 +41,20 @@ jobs:
            Repository: ${{ github.repository }}
 
            https://github.com/${{ github.repository }}/commit/${{github.sha}}
+
+  new_issue:         
+      name: New Issue
+      runs-on: ubuntu-latest
+      if: github.event_name == 'issues'
+      steps:
+      - name: send message on push
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.ID }}
+        token: ${{ secrets.TOKEN }}
+        message:  |
+          New Issue ${{github.event.action}}
+          echo "Issue Title: ${{ github.event.issue.title }}"
+          echo "Issue Body: ${{ github.event.issue.body }}"
+          echo "Issue Creator: ${{ github.event.issue.user.login }}"
+          echo "Commenter: ${{ github.event.comment.user.login }}"
